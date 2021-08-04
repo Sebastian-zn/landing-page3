@@ -1,3 +1,25 @@
+const btn = document.getElementById('btt-button');
+
+window.onscroll = () => {
+  onScroll();
+}
+
+function onScroll() {
+  if (document.body.scrollTop >= 40 || document.documentElement.scrollTop >= 40) {
+    btn.style.display = 'block';
+  } else {
+    btn.style.display = 'none';
+  }
+}
+
+function backToTop() {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
+}
+
 $(function () {
   menu = $('nav ul');
 
