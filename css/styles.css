@@ -21,12 +21,13 @@ body {
   border-radius: 10px;
   z-index: 999;
   background-color: rgba(255, 68, 0, 0.562);
-  padding: 15px 25px;
+  padding: 10px 15px;
+  cursor: pointer;
 }
 
 .btt-button {
   color: #161616;
-  font-size: 2.3em;
+  font-size: 1.3em;
 }
 
 .section {
@@ -324,6 +325,13 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+  /* Global Styles */
+  .btt-button {
+    bottom: 20px;
+    padding: 10px 15px;
+  }
+
+  /* Main & Nav */
   .hide-on-small {
     display: none;
   }
